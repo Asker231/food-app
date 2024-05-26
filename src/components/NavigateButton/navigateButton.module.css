@@ -1,0 +1,19 @@
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    text-decoration: none;
+    color: var(--text-color);
+    gap: 20px;
+    padding:2px 0px;
+    span{
+        font-size: 15px;
+    }
+
+}
+.image{
+    object-fit: cover;
+    width: 18px;
+    height: 18px;
+}
