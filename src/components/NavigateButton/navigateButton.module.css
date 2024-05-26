@@ -11,7 +11,12 @@
         font-size: 15px;
     }
 
+    span:hover{
+        color: var(--primary-color);
+    }
+
 }
+
 .image{
     object-fit: cover;
     width: 18px;

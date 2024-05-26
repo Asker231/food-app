@@ -4,17 +4,21 @@ import NavigateButton from '../../components/NavigateButton/NavigateButton'
 import userImage from '../../assets/UserImage.png'
 import Button from '../../components/Button/Button'
 
-function Home() {
+
+
+function Home() {    
    const navArray = [
       {
+        id:1,
         title:"Меню",
         path:"/menu",
-        icon:"../../../public/menu-icon.svg"
+        icon:"../../../public/menu-icon.svg",
       },
       {
+        id:2,
         title:"Корзина",
         path:"/cart",
-        icon:"../../../public/cart-icon.svg"
+        icon:"../../../public/cart-icon.svg",
       },
    ]  
   return (
@@ -29,7 +33,7 @@ function Home() {
             <div className={style['navigation']}>
             {
                 navArray.map((el)=>{
-                    return <NavigateButton title={el.title} icon={el.icon} path={el.path}/>
+                    return <NavigateButton key={el.id} title={el.title} icon={el.icon} path={el.path}/>
                 })
             }
             </div>

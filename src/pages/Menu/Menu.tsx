@@ -1,9 +1,10 @@
+import style from  './menu.module.css';
 
 
 function Menu() {
   return (
-    <div>
-      menu
+    <div className={style["menu"]}>
+      
     </div>
   )
 }

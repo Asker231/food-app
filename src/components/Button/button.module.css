@@ -8,16 +8,13 @@
     border-radius: 29px;
     font-style: normal;
     font-weight: 400;
-
-
 }
-
 .accent{
    background-color: #FE724C;
 }
 
 .accent:hover{
-    background-color: #ff7853;
+    background-color: #fa896a;
 }
 
 .small{
