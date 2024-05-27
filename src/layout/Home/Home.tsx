@@ -27,7 +27,11 @@ function Home() {
             <div className={style["header"]}>
             <div className={style["personInfo"]}>
                 <img src={userImage}  alt="" />
-                <div className={style["username"]}>Kotsev Asker</div>
+                <div className={style["username"]}>
+                      <span> Kotsev Asker </span>
+                      <img className={style["img"]} src="../../../public/bage.svg" alt="" /> 
+                </div>
+
                 <span className={style["userEmail"]}>kotsevasker0gmail.com</span>
             </div>
             <div className={style['navigation']}>
