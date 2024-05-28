@@ -1,7 +1,8 @@
 
 import { Link } from 'react-router-dom'
 import style from './card.module.css'
-import { ICard } from './card.props'
+import { ICard } from '../../interfaces/product.interface'
+
 
 function Card(prop:ICard){
   return (
