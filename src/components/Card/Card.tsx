@@ -1,10 +1,11 @@
 
+import { Link } from 'react-router-dom'
 import style from './card.module.css'
 import { ICard } from './card.props'
 
 function Card(prop:ICard){
   return (
-    <div className={style["card"]}>
+    <Link to={`/product/${prop.id}`} className={style["card"]}>
         <div className={style["top"]}>
             <img src={prop.image} alt="image" />
         </div>
@@ -18,7 +19,7 @@ function Card(prop:ICard){
                   </span>
                 </div>
         </div>
-    </div>
+    </Link>
   )
 }
 

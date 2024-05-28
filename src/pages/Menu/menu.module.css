@@ -49,7 +49,8 @@
         width: 100%;
         padding: 20px;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        grid-template-rows: 33%,33%,33%;
         gap:30px
 
 

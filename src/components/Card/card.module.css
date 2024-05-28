@@ -4,7 +4,8 @@
     background-color: white;
     border-radius: 12px;
     width: 323px;
-    height: 230px;
+    text-decoration: none;
+    color: black;
     position: relative;
     cursor: pointer;
     justify-content: space-between;
