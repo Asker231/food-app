@@ -3,9 +3,6 @@ import style from './card.module.css'
 import { ICard } from './card.props'
 
 function Card(prop:ICard){
-
-  console.log(prop.ingredients.join(","));
-  
   return (
     <div className={style["card"]}>
         <div className={style["top"]}>

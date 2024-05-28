@@ -4,18 +4,18 @@ import style from  './menu.module.css';
 import cn from 'classnames'
 import { ICard } from '../../components/Card/card.props';
 import Card from '../../components/Card/Card';
+import axios from 'axios';
 
 function Menu() {
-
   const[data,setData] = useState<Array<ICard>>([])
-
   async function  GetData() {
-      const f = await fetch("https://purpleschool.ru/pizza-api-demo/products")
-      const res = await f.json()
-      setData(res)
-
+    try{
+      const{data} = await axios.get<Array<ICard>>("https://purpleschool.ru/pizza-api-demo/products")
+      setData(data)
+    }catch(e){
+      console.log(e);
+    }
   }
-
   useEffect(()=>{
     GetData()
   },[])
