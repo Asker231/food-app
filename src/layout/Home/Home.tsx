@@ -11,7 +11,7 @@ function Home() {
       {
         id:1,
         title:"Меню",
-        path:"/menu",
+        path:"/",
         icon:"../../../public/menu-icon.svg",
       },
       {

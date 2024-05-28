@@ -3,6 +3,9 @@ import style from './card.module.css'
 import { ICard } from './card.props'
 
 function Card(prop:ICard){
+
+  console.log(prop.ingredients.join(","));
+  
   return (
     <div className={style["card"]}>
         <div className={style["top"]}>
@@ -10,9 +13,13 @@ function Card(prop:ICard){
         </div>
         <div className={style["bottom"]}>
                 <h3>{prop.name}</h3>
-                <div className={style["bottom-list"]}>{prop.ingredients.map((el)=>{
-                    return <span>{el}</span>
-                })}</div>
+                <div className={style["bottom-list"]}>
+                  <span>
+                  {
+                    prop.ingredients.join(",")
+                  }
+                  </span>
+                </div>
         </div>
     </div>
   )

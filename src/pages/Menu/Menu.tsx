@@ -13,8 +13,6 @@ function Menu() {
       const f = await fetch("https://purpleschool.ru/pizza-api-demo/products")
       const res = await f.json()
       setData(res)
-      console.log(data);
-      
 
   }
 

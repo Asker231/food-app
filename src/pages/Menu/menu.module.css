@@ -50,8 +50,19 @@
         padding: 20px;
         align-items: center;
         justify-content: space-between;
-        gap:30px;
+        gap:30px
 
 
     }
 }
+
+@media (max-width:768px){
+    .menu{
+        .list{
+            grid-template-columns: repeat(2,223px);
+            gap: 10px;
+            overflow-y: scroll;
+           } 
+    }
+}
+
