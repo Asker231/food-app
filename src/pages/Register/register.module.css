@@ -1,27 +1,50 @@
 .register{
     display: flex;
     flex-direction: column;
-    gap: 40px;
     width: 50%;
-    padding:20px;
-    .bottom{
+    form{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-         .buttoon{
-            width: 80%;
+        padding:20px;
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+             .buttoon{
+                width: 80%;
+    
+             }   
+            span{
+                font-size: 16px;
+                font-weight:300;
+            }
+            a{
+                text-decoration: none;
+                color: var(--primary-color);
+            }
+        }
+    }
+    
+}
 
-         }   
-        span{
-            font-size: 16px;
-            font-weight:300;
-        }
-        a{
-            text-decoration: none;
-            color: var(--primary-color);
-        }
+@media (max-width:426px) {
+    .register{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width:768px) {
+      .register{
+        width: 100%;
+      }
+    }
+
+@media (max-width:1024px) {
+    .register{
+        width: 100%;
     }
 }

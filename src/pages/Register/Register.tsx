@@ -6,7 +6,8 @@ import style from './register.module.css'
 function Register() {
   return (
     <div className={style["register"]}>
-          <TextField placeholder='Email' lable='Ваш email'/>
+      <form >
+      <TextField placeholder='Email' lable='Ваш email'/>
           <TextField placeholder='Пароль' lable='Ваш пароль'/>
           <TextField placeholder='Имя' lable='Ваше имя'/>
           <div className={style["bottom"]}>
@@ -14,6 +15,7 @@ function Register() {
           <span>Есть аккаунта?</span>
           <NavLink to={'/auth/login'}>Войти</NavLink>
           </div>
+      </form>
     </div>
   )
 }
